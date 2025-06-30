@@ -1,0 +1,6 @@
+/* 限制頂部 logo/banner 圖片大小 */
+.app-name img, 
+.sidebar-nav img {
+  max-width: 200px; /* 或你想要的大小 */
+  height: auto;
+}
