@@ -1,0 +1,14 @@
+# 忽略 Obsidian 設定資料夾
+.obsidian/
+
+# 忽略系統檔案（Windows）
+Thumbs.db
+Desktop.ini
+
+# 忽略 macOS 系統檔案
+.DS_Store
+
+# 忽略暫存檔、備份檔（可依需求修改）
+*.tmp
+*.bak
+*.swp
