@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>大衛哥的筆記網站</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="docsify.css" />
-    <script>
-      window.$docsify = {
-        name: '大衛哥的筆記網站',
-        repo: 'https://github.com/davidhtchen/dchen-knowledge',
-        loadSidebar: true  // 這行加上去，讓側邊欄顯示
-      };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4" defer></script>
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>大衛哥的筆記網站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- 主題樣式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/themes/vue.css" />
+
+  <!-- ✨ 加入 collapse 外掛樣式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+
+  <script>
+    window.$docsify = {
+      name: '大衛哥的筆記網站',
+      repo: 'https://github.com/davidhtchen/dchen-knowledge',
+      loadSidebar: true,
+	  coverpage: true,
+      subMaxLevel: 2,
+      sidebarDisplayLevel: 1, // 預設只展開第一層
+      themeColor: '#42b983',
+      plugins: [
+        window.DocsifySidebarCollapse
+      ]
+    };
+  </script>
+
+  <!-- Docsify 主程式 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4" defer></script>
+
+  <!-- ✨ 插件程式 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js" defer></script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
 </html>
